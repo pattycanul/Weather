@@ -1,0 +1,162 @@
+.body {
+    background-color: rgb(129, 129, 129);
+}
+
+.Titulo {
+    color: rgb(56, 56, 56);
+    margin-bottom: -5%;
+    font-style: italic;
+    background-color: rgb(190, 190, 190);
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+}
+
+.container{
+    font-family: sans-serif;
+    padding: 10px 70px;
+    width: 90%;
+}
+
+.container-card{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+}
+
+.container-main{
+    display: flex;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card{
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    justify-content: center;
+    overflow: hidden;
+    width: 300px;
+}  
+
+.card-head{
+    position: relative;
+    text-align: right;
+    top: 0%;
+    width: 100%;
+}
+
+.card-elements-icon{
+    left: 10%;
+    position: absolute;
+    top: 15%;
+}
+
+.card-elements-icon img{
+    width: 150%;
+}
+
+.card-data{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+
+.card-data-condition{
+    font-size: 26px;
+}
+
+.card-data-grados{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: -10px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.card-data-grados span{
+    font-size: 40px;
+    font-weight: lighter;
+    position: absolute;
+}
+
+.card-data-ciudad{
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: -35px;
+    white-space: nowrap;
+}
+
+.body-card{
+    background-color: rgb(246, 246, 246);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.body-card-viento{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+.body-card-humedad{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.body-card-presion{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Color para estado "Sunny" */
+.card-head.sunny {
+    background-color: rgba(224, 224, 140, 0.936);
+}
+
+  /* Color para estado "Cloudy" */
+.card-head.cloudy {
+    background-color: rgb(166, 172, 177);
+}
+
+  /* Color para estado "Rain" */
+.card-head.rain {
+    background-color: rgb(92, 92, 92);
+}
+
+  /* Color para estado "Clear" */
+.card-head.clear {
+    background-color: rgb(131, 188, 235);
+}
+
+  /* Color para estado "Fog" */
+.card-head.fog {
+    background-color: rgb(44, 63, 87);
+}
+
+.card-head.overcast {
+    background-color: rgb(195, 194, 194);
+}
